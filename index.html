@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="whimsical.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" media="screen and (max-width:1200px)"  href="phone.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Whimsical</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html"
+        ><img src="whimsical.webp" alt="a logo" class="logo"
+      /></a>
+      <p class="para"> <a href="index.html">Whimsical</a> </p>
+      <div class="button">
+        <a href="signUp.html"> <button class="signUp">Sign Up</button></a>
+        <a href="signin.html"><button class="signIn"> Sign In </button></a>
+        </div>
+      </div>
+    </div>
+    <section class="intro">
+      <video autoplay loop muted plays-inline class="video">
+        <source src="video3.mp4" type="video/mp4" />
+      </video>
+      <!-- <i class="fa-bars"></i> -->
+      <div class="menu">
+        <img src="menu.png" class="menuClass" alt="bar" onclick="showmenu()">
+      </div>
+      <div class="navbar visibility" id="navlink">
+        <i class="fa fa-window-close" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="index.html" class="home">Home</a></li>
+          <li><a href="#about" class="about">About</a></li>
+          <li><a href="#service" class="service">Services</a></li>
+          <li><a href="#contact" class="contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="modal hidden">
+        <button class="close-button">&times;</button>
+        <h1>Welcome to Whimsical</h1>
+        <p>You've come to the right place to grow your skills. Here we try hard to develop your skill and move further
+          in your life.Here you can learn different programming languages such as Python,Java,Javascript,C,C++ and many more.
+          Scroll down to explore the website
+        </p>
+        <button class="ok">Ok</button>
+      </div>
+      <div class="overlay hidden" >
+
+      </div>
+      <div id="home" class="text">
+        <h1>WELCOME TO <span>WHIMSICAL </span></h1>
+        <p>A best website to learn &nbsp; <span class="animation"> </span></p>
+        <button id="about" class="explore">Explore Now</button>
+      </div>
+    </section>
+    <section id="about" class="about2">
+      <h1 class="abouth1">About</h1>
+      <div class="para2">
+        <p class="p-para">
+          Do you want to upgrade your skills or start learning new skill? You've
+          come to the right place
+          <span class="span-para2">WHIMSICAL</span> . We have the best of the
+          best courses at the affordable price. We sell different course related
+          to programming ,hacking,crypto-currency etc by the professional tutors
+          who are been working as a software engineer and other respective
+          field.We too hire interns. You may check our career section to be our
+          family member.
+        </p>
+      </div>
+    </section>
+    <section  id="service" class="services2">
+      <h1 class="servicesh1">Services</h1>
+      <p class="para3">Our 3 Popular Courses</p>
+      <div class="row">
+        <div class="col">
+          <h2>Python</h2>
+          <br />
+          <p class="p-col">
+            Python is a high-level, general-purpose and a very popular
+            programming language. Python programming language (latest Python 3)
+            is being used in web development, Machine Learning applications,
+            along with all cutting edge technology in Software Industry. Python
+            Programming Language is very well suited for Beginners, also for
+            experienced programmers with other programming languages like C++
+            and Java. <a href="https://www.python.org/" target="_blank">See more...</a>
+          </p>
+        </div>
+        <div class="col">
+          <h2>CCNA</h2>
+          <br />
+          <p class="p-col">
+            The CCNA—which stands for Cisco Certified Network Associate—is an
+            entry-level information technology (IT) certification issued by
+            networking hardware company Cisco. The CCNA is designed to validate
+            your knowledge on fundamental networking concepts often requested in
+            networking roles in IT positions.
+            <a
+              href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html"
+              target="_blank"
+              >See more...</a
+            >
+          </p>
+        </div>
+        <div class="col">
+          <h2>Java</h2>
+          <br />
+          <p class="p-col">
+            Java is a general-purpose, class-based, object-oriented programming
+            language designed for having lesser implementation dependencies. It
+            is a computing platform for application development. Java is fast,
+            secure, and reliable, therefore. It is widely used for developing
+            Java applications in laptops, data centers, game consoles,
+            scientific supercomputers, cell phones, etc.
+            <a href="https://www.java.com/en/" target="_blank">See more...</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+        <h1 class="h1partners">Our Partners</h1>
+        <div class="f1">
+            <img  src="f1.png" alt="logo" class="img">
+            <p class="pf1">F1 Soft International</p>
+        </div>
+        <div class="logpoint">
+            <img src="loogpoint.png" alt="logo" class="img" id="log">
+           <p class="pls"> <a href="https://www.logpoint.com/en/" target="_blank" class="pls">Logpoint Softwares</a> </p> 
+        </div>
+        <div class="versik">
+            <img src="versik.png" alt="logo" class="img" id="ver">
+            <p class="pvs">Versik IT Solutions</p>
+        </div>
+        
+
+    </section>
+    <section  id="contact" class="contactus2">
+      <h1 class="h1contact">Contact Us</h1>
+      <form action="backend.py" method="post">
+      <div class="name">
+        <label for="name">Name:</label> <input type="text" name="name" id="myname">
+      </div>
+      <div class="email">
+         <label for="name">Email:</label> <input type="email" name="email" id="myeamil">
+        </div>
+     <div class="message">
+      <label for="name" class="msg">Message:</label> <textarea name="text" id="text" cols="30" rows="10"></textarea>
+     </div>
+     <div class="submit"> <button class="send" value="submit" name="submit">Send</button></div>
+     </form>
+     <div class="socialmedia">
+      <h1 class="socialh1">Follow us </h1>
+      <div class="images">
+        <img src="fb.png" class="imageclass" id="fb" alt="logo" srcset="">
+      <img src="instapng.png" class="imageclass" id="insta" alt="logo" srcset="">
+  
+      </div>
+      
+     </div>
+    </section>
+    <section class="copyright">
+      <p class="copy">&copy; copyright 2022.&nbsp;All rights reserved.</p>
+    </section>
+    <script src="script.js"></script>
+    
+    </script>
+  </body>
+</html>

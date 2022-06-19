@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e0d66896bf.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="whimsical.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Sign Up | Whimsical</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+        }
+        .container{
+            /* border: 1px solid white; */
+            /* background: linear-gradient(120deg,#2980b9,#8e44ad); */
+            background: url('backbg.jpg') no-repeat center center/cover;
+            width:100vw;
+            height: 100vh;
+            margin-top:-24px;
+            position: relative;
+            top:2px;
+           
+        }
+        .header{
+            height: 9vh;
+            border-bottom: 10px solid blueviolet;
+            /* z-index: 2; */
+           
+        }
+        .header img{
+    
+            height: 50px;
+            position: relative;
+            top:5px;
+            left:85px;
+        }
+        .para{
+            position: absolute;
+            top:-8px;
+            left:141px;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: blueviolet;
+        }
+       form{
+        width:24%;
+        height: 53vh;
+        background-color: rgba(255, 255, 255, 0.603);
+        justify-content: center;
+        position: relative;
+        transform: translate(-50%,-50%);
+        top:40%;
+        left:77%;
+        border-radius: 8px;
+    }
+       input{
+        margin:2px 2px;
+        outline: none;
+        width:70%;
+        height: 5vh;
+        /* border-radius: 4px; */
+        /* border:none; */
+        /* border:1px solid grey; */
+       }
+       .input{
+        position: relative;
+        top:8px;
+        left:42px;
+       }
+       .container h1{
+        text-align: center;
+        position: relative;
+        top:21px;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+          color: #2980b9;
+          
+        }
+        .btn{
+           position: relative;
+           top:21px;
+           left:42px;
+           width:73%;
+           height: 6vh;
+           background-color: rgb(181, 128, 230);
+           border:none;
+           font-family: 'Source Sans Pro', sans-serif;
+           color:white;
+           font-size: 18px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            
+        }
+        .container p{
+            position: relative;
+            top:17px;
+            left:45px;
+        }
+        .header img:hover{
+  transform: rotate(180deg);
+} 
+
+@media (max-width:480px) {
+    
+    /* width: 73%;
+    height: 61vh;
+    background-color: rgba(255, 255, 255, 0.603);
+    justify-content: center;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    border-radius: 8px; */
+    form{
+        width: 73%;
+    height: 61vh;
+    background-color: rgba(255, 255, 255, 0.603);
+    justify-content: center;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 40%;
+    left: 50%;
+    border-radius: 8px; 
+    }
+    .header img{
+        height: 43px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html"><img src="whimsical.webp" alt="logo"></a> 
+       <a href="index.html"><h1 class="para">Whimsical</h1></a> 
+    </div>
+    <!-- <hr> -->
+    <div class="container">
+        <form action="backend.py" method="post">
+            <h1>Sign Up</h1>
+            <div class="input"><div class="name">
+                <input type="text" name="name" id="name" placeholder="Username" onkeyup="isEmpty()" required>
+            </div>
+            <div class="email">
+                <input type="email" name="email" id="myemail" placeholder="Email" onkeyup="isEmpty()"  required>
+
+            </div>
+            <div class="password">
+                <input type="password" name="password" id="mypassword" placeholder="Password"  onkeyup="isEmpty()" required>
+            </div>
+            <div class="confirm">
+                <input type="password" name="confirm" id="myconfirm" placeholder="Confirm password" onkeyup="isEmpty()" required>
+            </div></div>
+            <button class="btn" id="mybtn" disabled>Create Account</button>
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+
+        </form>
+    </div>
+</body>
+<script>
+    function isEmpty(){
+        let username=document.getElementById("name").value;
+        let email=document.getElementById("myemail").value;
+       let password=document.getElementById("mypassword").value;
+       let confirm=document.getElementById("myconfirm").value;
+
+       if(username !=="" && email!=="" && password!==""&confirm!=="" && confirm.length>=8){
+        document.getElementById("mybtn").removeAttribute("disabled");
+        document.getElementById("mybtn").style.backgroundColor="blueviolet";
+       }
+    }
+</script>
+</html>
